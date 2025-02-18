@@ -1,0 +1,318 @@
+/* MASTER */
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    background-color: black;
+    z-index: -11;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    position: relative;
+    overflow: inherit;
+    transition: transform 0.1s ease-out;
+}
+
+
+
+
+/* TV */
+
+.flex img{
+    min-height: auto;
+    min-width: 100%;
+    object-fit: cover;
+    flex: 1 1 auto;
+}
+
+.tv{
+    display: block;
+    height: 14%;
+    width: 13.75%;
+    top: 34%;
+    right: 21.7%;
+    border-radius: 20%;
+    transform: skew(3deg, -5deg)
+               rotate(2deg);
+    position: absolute;
+    z-index: 10;
+    align-content:center;
+    overflow:hidden;
+}
+
+#keywordInput{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    transform: skew(3deg, 358deg)
+               rotate(3deg);
+    resize: none;
+    overflow: hidden;
+    text-align: center;
+    align-content:center;
+    border:none;
+    text-shadow: 
+    -1px -1px 3px rgba(255,255,255,.2),
+    -1px 1px 3px rgba(255,255,255,.2),
+    1px -1px 3px rgba(255,255,255,.2),
+    1px 1px 3px rgba(255,255,255,.2);
+    color: white;
+}
+
+textarea:focus{ 
+    outline: none;
+}
+
+#keywordInput{
+    overflow:none;
+    font-size: 2vh;
+}
+
+
+#keywordInput::placeholder{
+    color: white;
+    overflow:none;
+}
+
+
+
+
+/* MUSIC */
+
+.music{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    height: 22%;
+    width: 15%;
+    right: 0.5%;
+    top: 17%;
+    transform: 
+        rotate(-8deg)
+        skew(-4deg);
+    align-content: center;
+    overflow: hidden;
+}
+
+#play-music{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#music-popup{
+    position: absolute;
+    text-align: center;
+    top: 1%;
+    left: 1%;
+    width: 150px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+    display: none;
+    font-size: 12px;
+    padding: 10px 20px;
+    z-index: 1000;
+    opacity: 75%;
+    overflow:hidden;
+    white-space: nowrap;
+}
+
+.song-title-container {
+    display: inline-block;
+    width: 150px; 
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.scrolling-title {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 6s linear forwards;
+}
+
+@keyframes scrollText {
+
+    from { transform: translateX(0); }
+
+    to { transform: translateX(-100%); }
+}
+
+@keyframes fadeOut {
+    to { opacity: 0; }
+}
+
+
+
+
+/* CASSOWARY */
+
+.cassowary{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    height: 22%;
+    width: 12.5%;
+    left: 2%;
+    top: 46%;
+    align-content: center;
+    overflow: hidden;
+}
+
+#cassowary-button{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+
+/* PAPERS */
+
+.papers{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    height: 10%;
+    width: 17%;
+    right: 17%;
+    bottom: 12%;
+    transform: rotate(8deg);
+    align-content: center;
+    overflow: hidden;
+}
+
+#papers-button{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+
+/* BOARD */
+
+.board-1{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    height: 9%;
+    width: 6.5%;
+    left: 14%;
+    top: 27%;
+    transform: rotate(15deg)
+    skewX(12deg);
+}
+
+#b-1{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.board-2{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    height: 6%;
+    width: 4%;
+    top: 39%;
+    left: 14%;
+}
+
+#b-2{
+    background-color: transparent;
+    width: 100%;
+    height: 100%; 
+    border: none;
+}
+
+
+.board-3{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    height: 4%;
+    width: 3%;
+    top: 46%;
+    left: 18.5%;
+
+}
+
+#b-3{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;  
+    border: none; 
+}
+
+
+.board-4{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 38.5%;
+    left: 20%;
+    width: 3%;
+    height: 7%;
+    transform: skew(-5deg, 20deg);
+}
+
+#b-4{
+    background-color:transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.board-5{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 31%;
+    left: 21.5%;
+    height: 4%;
+    width: 5%;
+    transform: rotate(15deg)
+}
+
+#b-5{
+    background-color:transparent;
+    width: 100%;
+    height: 100%; 
+    border: none;
+}
+
+.board-6{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 41%; 
+    left: 24.5%;
+    height: 4%;
+    width: 2%;
+}
+
+#b-6{
+    background-color:transparent;
+    width: 100%;
+    height: 100%;  
+    border: none;
+}
